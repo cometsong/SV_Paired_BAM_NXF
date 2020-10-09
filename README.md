@@ -16,8 +16,9 @@ UCSC on _2019-10-21 20:52:26 +0000 (Mon, 21 Oct 2019)_ and based on the
 _mm10_ genome based on the knownGene table)
 
 Structural variant type are classed into the following types:
-    - _INS_ – Insertion
-    - _INV_ – Inversion
-    - _DEL_ – Deletion
-    - _DUP_ – Duplication
-    - _TRA_ – Translocation
+
+- _INS_ – Insertion
+- _INV_ – Inversion
+- _DEL_ – Deletion
+- _DUP_ – Duplication
+- _TRA_ – Translocation
