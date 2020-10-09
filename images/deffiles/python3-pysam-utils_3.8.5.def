@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: python:3.8.5-slim
+
+%help
+    Add modules to Python 3.8.5 slim debian environment.
+
+%labels
+    Py Modules: pysam
+    Author benjamin.leopold@jax.org
+
+%post
+    apt-get update && apt-get install -y \
+        less \
+        gawk \
+        bc \
+        procps \
+    && \
+    rm -rf /var/lib/apt/lists/* \
+    && \
+    python3 -m pip install \
+        pysam \
+
+#vim: set ft=Singularity.sh ts=4 sw=0 tw=100 et cms=#%s fdm=manual:
+

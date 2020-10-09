@@ -1,0 +1,4 @@
+bootstrap: docker
+from: dceoy/bcftools:latest
+
+

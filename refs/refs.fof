@@ -1,0 +1,7 @@
+total 3.2G
+-r--r--r-- 1  267 2020-10-08 14:53:38 config_file_for_MatePair
+-r--r--r-- 1 2.6G 2020-10-08 14:53:46 GRCm38_p5_primaryAssembly_rename.fa
+-r--r--r-- 1 2.2K 2020-10-08 14:53:46 GRCm38_p5_primaryAssembly_rename.fa.fai
+-r--r--r-- 1  49M 2020-10-08 14:53:46 mm10_exon_list.bed
+-r--r--r-- 1  12K 2020-10-08 14:53:46 mm10.gaps.centro_telo.scafold.exclude.bed
+-r--r--r-- 1 5.1K 2020-10-08 14:53:46 mouse.mm10.excl.tsv

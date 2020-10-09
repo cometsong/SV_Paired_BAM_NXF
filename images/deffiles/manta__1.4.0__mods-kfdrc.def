@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: kfdrc/manta:1.4.0
+
+%labels
+    Origin https://github.com/d3b-center/bixtools/blob/master/manta/1.4/Dockerfile
+    Current Modified by Benjamin Leopold at JAX-GM for easier calling file in /manta/bin
+
+%post
+    MANTA_VERSION=1.4.0
+    mv /manta-${MANTA_VERSION}.centos6_x86_64 /manta
+    export PATH=/manta/bin:$PATH
+
+

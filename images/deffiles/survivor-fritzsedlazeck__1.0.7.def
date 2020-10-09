@@ -1,0 +1,37 @@
+Bootstrap: library
+From: alpine:latest
+
+%help
+    SURVIVOR is a tool set for simulating/evaluating SVs, merging and comparing SVs within
+    and among samples, and includes various methods to reformat or summarize SVs.
+
+%labels
+    AppName SURVIVOR
+    AppVers 1.0.7
+    AppRepo https://github.com/fritzsedlazeck/SURVIVOR/
+    AppAuthor Fritz Sedlazeck
+    SingularAuthor B. Leopold, benjamin.leopold@jax.org
+
+%post
+    export AppVers='1.0.7'
+    apk update && \
+    apk add --no-cache \
+        bash \
+        grep \
+        gawk \
+        sed \
+        bc \
+        build-base \
+        zlib-dev \
+        curl \
+        tar \
+        gzip \
+    && \
+    cd /opt && \
+    curl -SL https://github.com/fritzsedlazeck/SURVIVOR/archive/${AppVers}.tar.gz | \
+    tar xz && \
+    cd SURVIVOR-${AppVers}/Debug && \
+    make && \
+    mv /opt/SURVIVOR-1.0.7/Debug/SURVIVOR /usr/bin/
+
+
